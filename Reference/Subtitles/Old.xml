@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<tt:tt xmlns:tt="http://www.w3.org/ns/ttml" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" ttp:dropMode="nonDrop" ttp:frameRate="24" ttp:timeBase="smpte" xmlns:ebuttdt="urn:ebu:tt:datatypes" xmlns:ebuttm="urn:ebu:tt:metadata" xmlns:ebutts="urn:ebu:tt:style" xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling">
+
+  <tt:head>
+    <tt:metadata>
+      <ebuttm:documentMetadata>
+        <ebuttm:documentEbuttVersion>v1.0</ebuttm:documentEbuttVersion>
+        <ebuttm:documentMaximumNumberOfDisplayableCharacterInAnyRow>40</ebuttm:documentMaximumNumberOfDisplayableCharacterInAnyRow>
+      </ebuttm:documentMetadata>
+    </tt:metadata>
+    <tt:styling>
+      <tt:style tts:color="white" tts:fontFamily="monospace" tts:fontWeight="normal" tts:textAlign="left" xml:id="basic"/>
+    </tt:styling>
+    <tt:layout>
+      <tt:region tts:backgroundColor="transparent" xml:id="pop1"/>
+      <tt:region tts:backgroundColor="transparent" xml:id="paint"/>
+      <tt:region tts:backgroundColor="transparent" xml:id="rollup2"/>
+      <tt:region tts:backgroundColor="transparent" xml:id="rollup3"/>
+      <tt:region tts:backgroundColor="transparent" xml:id="rollup4"/>
+    </tt:layout>
+  </tt:head>
+
+  <tt:body>
+    <tt:div>
+      <tt:p tt:begin="00:00:00:00" tt:end="00:00:03:18" tt:region="pop1" tt:style="basic" tts:origin="34% 80%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:color="#FF0000FF" tts:fontFamily="Calibri" tts:fontSize="40px">J. J. McCullough</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:00:00:00" tt:end="00:00:03:18" tt:region="pop1" tt:style="basic" tts:origin="14% 83.333333333333329%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">...as a result, ice cream has evolved</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:00:00:00" tt:end="00:00:03:18" tt:region="pop1" tt:style="basic" tts:origin="16% 86.666666666666671%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">into a pretty unique consumer good,</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:00:03:18" tt:end="00:00:07:21" tt:region="pop1" tt:style="basic" tts:origin="20% 83.333333333333329%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">in the sense that customers are</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:00:03:18" tt:end="00:00:07:21" tt:region="pop1" tt:style="basic" tts:origin="14% 86.666666666666671%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">allowed (or even encouraged) to have</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:00:07:21" tt:end="00:00:13:05" tt:region="pop1" tt:style="basic" tts:origin="18% 80%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">pretty idiosyncratic preferences,</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:00:07:21" tt:end="00:00:13:05" tt:region="pop1" tt:style="basic" tts:origin="18% 83.333333333333329%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">that the industry is nevertheless</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:00:07:21" tt:end="00:00:13:05" tt:region="pop1" tt:style="basic" tts:origin="32% 86.666666666666671%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">happy to cater to.</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:00:13:05" tt:end="00:00:17:20" tt:region="pop1" tt:style="basic" tts:origin="20% 83.333333333333329%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">But in any case, according to a</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:00:13:05" tt:end="00:00:17:20" tt:region="pop1" tt:style="basic" tts:origin="28% 86.666666666666671%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">2017 study by the IDFA,</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:00:17:20" tt:end="00:00:21:00" tt:region="pop1" tt:style="basic" tts:origin="18% 83.333333333333329%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">America's leading Dairy Industry</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:00:17:20" tt:end="00:00:21:00" tt:region="pop1" tt:style="basic" tts:origin="38% 86.666666666666671%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">lobby group,</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:00:21:00" tt:end="00:00:25:11" tt:region="pop1" tt:style="basic" tts:origin="20% 83.333333333333329%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">the five best-selling American</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:00:21:00" tt:end="00:00:25:11" tt:region="pop1" tt:style="basic" tts:origin="18% 86.666666666666671%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">Ice Cream flavors these days are:</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:00:30:02" tt:end="00:00:33:10" tt:region="pop1" tt:style="basic" tts:origin="16% 86.666666666666671%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">...and Chocolate Chip Cookie Dough.</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:00:33:10" tt:end="00:00:39:07" tt:region="pop1" tt:style="basic" tts:origin="16% 80%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">A 2020 YouGov poll by the American</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:00:33:10" tt:end="00:00:39:07" tt:region="pop1" tt:style="basic" tts:origin="14% 83.333333333333329%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">public, meanwhile, yielded basically</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:00:33:10" tt:end="00:00:39:07" tt:region="pop1" tt:style="basic" tts:origin="34% 86.666666666666671%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">the same results,</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:00:39:07" tt:end="00:00:42:22" tt:region="pop1" tt:style="basic" tts:origin="16% 83.333333333333329%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">with the only difference being that</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:00:39:07" tt:end="00:00:42:22" tt:region="pop1" tt:style="basic" tts:origin="22% 86.666666666666671%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">in their list, they also had</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:00:43:20" tt:end="00:00:44:20" tt:region="pop1" tt:style="basic" tts:origin="42% 86.666666666666671%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">...and...</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:00:45:13" tt:end="00:00:46:08" tt:region="pop1" tt:style="basic" tts:origin="38% 86.666666666666671%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">..."pee-can."</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:00:47:06" tt:end="00:00:50:15" tt:region="pop1" tt:style="basic" tts:origin="14% 83.333333333333329%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">"Pee-cans" are another plant that is</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:00:47:06" tt:end="00:00:50:15" tt:region="pop1" tt:style="basic" tts:origin="22% 86.666666666666671%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">indigenous to North America.</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:00:50:15" tt:end="00:00:53:23" tt:region="pop1" tt:style="basic" tts:origin="22% 83.333333333333329%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">According to this book about</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:00:50:15" tt:end="00:00:53:23" tt:region="pop1" tt:style="basic" tts:origin="24% 86.666666666666671%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">the history of "pee-cans,"</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:00:53:23" tt:end="00:00:59:08" tt:region="pop1" tt:style="basic" tts:origin="18% 80%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">early European settlers tended to</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:00:53:23" tt:end="00:00:59:08" tt:region="pop1" tt:style="basic" tts:origin="14% 83.333333333333329%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">dismiss "pee-cans" as being basically</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:00:53:23" tt:end="00:00:59:08" tt:region="pop1" tt:style="basic" tts:origin="30% 86.666666666666671%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">the same as walnuts,</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:00:59:08" tt:end="00:01:01:20" tt:region="pop1" tt:style="basic" tts:origin="18% 83.333333333333329%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">which they already had in Europe,</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:00:59:08" tt:end="00:01:01:20" tt:region="pop1" tt:style="basic" tts:origin="38% 86.666666666666671%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">so who cares.</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:01:01:20" tt:end="00:01:05:10" tt:region="pop1" tt:style="basic" tts:origin="16% 83.333333333333329%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">To this day, America produces over</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:01:01:20" tt:end="00:01:05:10" tt:region="pop1" tt:style="basic" tts:origin="20% 86.666666666666671%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">80% of the world's "pee-cans,"</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:01:05:10" tt:end="00:01:07:22" tt:region="pop1" tt:style="basic" tts:origin="22% 83.333333333333329%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">and they're mostly just eaten</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:01:05:10" tt:end="00:01:07:22" tt:region="pop1" tt:style="basic" tts:origin="38% 86.666666666666671%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">by Americans.</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:01:08:02" tt:end="00:01:12:06" tt:region="pop1" tt:style="basic" tts:origin="46% 80%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:color="#FF00FFFF" tts:fontFamily="Calibri" tts:fontSize="40px">Joey</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:01:08:02" tt:end="00:01:12:06" tt:region="pop1" tt:style="basic" tts:origin="24% 83.333333333333329%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">You make great videos, J.J.</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:01:08:02" tt:end="00:01:12:06" tt:region="pop1" tt:style="basic" tts:origin="32% 86.666666666666671%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">You were so close.</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:01:12:20" tt:end="00:01:15:16" tt:region="pop1" tt:style="basic" tts:origin="36% 83.333333333333329%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">I'm sorry, J.J.</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:01:12:20" tt:end="00:01:15:16" tt:region="pop1" tt:style="basic" tts:origin="30% 86.666666666666671%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">You made me do this.</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:01:15:16" tt:end="00:01:17:23" tt:region="pop1" tt:style="basic" tts:origin="34% 86.666666666666671%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">This is a pecan.</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:01:18:00" tt:end="00:01:20:22" tt:region="pop1" tt:style="basic" tts:origin="26% 86.666666666666671%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">This is a dish of pecans.</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:01:23:13" tt:end="00:01:26:03" tt:region="pop1" tt:style="basic" tts:origin="34% 86.666666666666671%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">These are NOT...</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:01:26:03" tt:end="00:01:28:17" tt:region="pop1" tt:style="basic" tts:origin="36% 86.666666666666671%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">..."PEE-CANS!"</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:01:32:04" tt:end="00:01:34:09" tt:region="pop1" tt:style="basic" tts:origin="28% 86.666666666666671%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">THIS... is a "Pea-Can."</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:01:43:20" tt:end="00:01:46:07" tt:region="pop1" tt:style="basic" tts:origin="26% 86.666666666666671%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">This is also a "Pee-Can."</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:01:47:10" tt:end="00:01:49:06" tt:region="pop1" tt:style="basic" tts:origin="30% 50%" tts:textAlign="right">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">*sounds of sloshing liquid*</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:01:49:06" tt:end="00:01:54:17" tt:region="pop1" tt:style="basic" tts:origin="24% 83.333333333333329%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">Yes, I urinated in this can</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:01:49:06" tt:end="00:01:54:17" tt:region="pop1" tt:style="basic" tts:origin="26% 86.666666666666671%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">just to make this point.</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:01:54:17" tt:end="00:01:56:16" tt:region="pop1" tt:style="basic" tts:origin="18% 86.666666666666671%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">Now, let me be completely clear.</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:01:56:16" tt:end="00:02:01:00" tt:region="pop1" tt:style="basic" tts:origin="28% 83.333333333333329%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">This is not an opinion.</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:01:56:16" tt:end="00:02:01:00" tt:region="pop1" tt:style="basic" tts:origin="26% 86.666666666666671%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">This is not an argument.</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:02:01:00" tt:end="00:02:06:07" tt:region="pop1" tt:style="basic" tts:origin="22% 83.333333333333329%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">"Puh-kaanz" is an OBJECTIVELY</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:02:01:00" tt:end="00:02:06:07" tt:region="pop1" tt:style="basic" tts:origin="30% 86.666666666666671%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">better pronunciation,</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:02:06:07" tt:end="00:02:11:13" tt:region="pop1" tt:style="basic" tts:origin="26% 83.333333333333329%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">because "Pee-cans" sounds</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:02:06:07" tt:end="00:02:11:13" tt:region="pop1" tt:style="basic" tts:origin="30% 86.666666666666671%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">D I S G U S T I N G !</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:02:11:13" tt:end="00:02:15:02" tt:region="pop1" tt:style="basic" tts:origin="24% 83.333333333333329%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">And pecans don't deserve a</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:02:11:13" tt:end="00:02:15:02" tt:region="pop1" tt:style="basic" tts:origin="28% 86.666666666666671%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">disgusting conotation.</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:02:15:02" tt:end="00:02:18:09" tt:region="pop1" tt:style="basic" tts:origin="22% 83.333333333333329%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">After all, they're delicious!</tt:span>
+      </tt:p>
+      <tt:p tt:begin="00:02:15:02" tt:end="00:02:18:09" tt:region="pop1" tt:style="basic" tts:origin="34% 86.666666666666671%" tts:textAlign="center">
+        <tt:span tts:backgroundColor="#000000FF" tts:fontFamily="Calibri" tts:fontSize="40px">Don't you agree?</tt:span>
+      </tt:p>
+    </tt:div>
+  </tt:body>
+
+</tt:tt>

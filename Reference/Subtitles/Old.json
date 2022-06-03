@@ -1,0 +1,451 @@
+{
+  "wireMagic": "pb3",
+  "pens": [ {
+  
+  }, {
+    "fcForeColor": 16711680
+  }, {
+    "fcForeColor": 16711935
+  } ],
+  "wsWinStyles": [ {
+  
+  }, {
+    "juJustifCode": 2
+  }, {
+    "juJustifCode": 1
+  } ],
+  "wpWinPositions": [ {
+  
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 3,
+    "ccCols": 39
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 38
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 3,
+    "ccCols": 35
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 33
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 34
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 35
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 37
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 3,
+    "ccCols": 38
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 37
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 11
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 15
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 30
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 36
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 31
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 3,
+    "ccCols": 29
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 22
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 18
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 27
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 16
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 25
+  }, {
+    "apPoint": 5,
+    "ahHorPos": 100,
+    "avVerPos": 52,
+    "rcRows": 1,
+    "ccCols": 29
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 29
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 34
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 26
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 27
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 28
+  } ],
+  "events": [ {
+    "tStartMs": 0,
+    "dDurationMs": 3720,
+    "segs": [ {
+      "utf8": "  "
+    }, {
+      "utf8": "J. J. McCullough ",
+      "pPenId": 1
+    }, {
+      "utf8": "\n ...as a result, ice cream has evolved \n into a pretty unique consumer good, "
+    } ],
+    "wpWinPosId": 1,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 3720,
+    "dDurationMs": 4120,
+    "segs": [ {
+      "utf8": " in the sense that customers are \n allowed (or even encouraged) to have "
+    } ],
+    "wpWinPosId": 2,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 7840,
+    "dDurationMs": 5360,
+    "segs": [ {
+      "utf8": " pretty idiosyncratic preferences, \n that the industry is nevertheless \n happy to cater to. "
+    } ],
+    "wpWinPosId": 3,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 13200,
+    "dDurationMs": 4600,
+    "segs": [ {
+      "utf8": " But in any case, according to a \n 2017 study by the IDFA, "
+    } ],
+    "wpWinPosId": 4,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 17800,
+    "dDurationMs": 3200,
+    "segs": [ {
+      "utf8": " America's leading Dairy Industry \n lobby group, "
+    } ],
+    "wpWinPosId": 5,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 21000,
+    "dDurationMs": 4440,
+    "segs": [ {
+      "utf8": " the five best-selling American \n Ice Cream flavors these days are: "
+    } ],
+    "wpWinPosId": 6,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 30080,
+    "dDurationMs": 3320,
+    "segs": [ {
+      "utf8": " ...and Chocolate Chip Cookie Dough. "
+    } ],
+    "wpWinPosId": 7,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 33400,
+    "dDurationMs": 5880,
+    "segs": [ {
+      "utf8": " A 2020 YouGov poll by the American \n public, meanwhile, yielded basically \n the same results, "
+    } ],
+    "wpWinPosId": 8,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 39280,
+    "dDurationMs": 3600,
+    "segs": [ {
+      "utf8": " with the only difference being that \n in their list, they also had "
+    } ],
+    "wpWinPosId": 9,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 43800,
+    "dDurationMs": 1000,
+    "segs": [ {
+      "utf8": " ...and... "
+    } ],
+    "wpWinPosId": 10,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 45520,
+    "dDurationMs": 800,
+    "segs": [ {
+      "utf8": " ...\"pee-can.\" "
+    } ],
+    "wpWinPosId": 11,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 47240,
+    "dDurationMs": 3360,
+    "segs": [ {
+      "utf8": " \"Pee-cans\" are another plant that is \n indigenous to North America. "
+    } ],
+    "wpWinPosId": 2,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 50600,
+    "dDurationMs": 3320,
+    "segs": [ {
+      "utf8": " According to this book about \n the history of \"pee-cans,\" "
+    } ],
+    "wpWinPosId": 12,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 53920,
+    "dDurationMs": 5400,
+    "segs": [ {
+      "utf8": " early European settlers tended to \n dismiss \"pee-cans\" as being basically \n the same as walnuts, "
+    } ],
+    "wpWinPosId": 1,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 59320,
+    "dDurationMs": 2480,
+    "segs": [ {
+      "utf8": " which they already had in Europe, \n so who cares. "
+    } ],
+    "wpWinPosId": 6,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 61800,
+    "dDurationMs": 3600,
+    "segs": [ {
+      "utf8": " To this day, America produces over \n 80% of the world's \"pee-cans,\" "
+    } ],
+    "wpWinPosId": 13,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 65400,
+    "dDurationMs": 2480,
+    "segs": [ {
+      "utf8": " and they're mostly just eaten \n by Americans. "
+    } ],
+    "wpWinPosId": 14,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 68080,
+    "dDurationMs": 4160,
+    "segs": [ {
+      "utf8": "  "
+    }, {
+      "utf8": "Joey ",
+      "pPenId": 2
+    }, {
+      "utf8": "\n You make great videos, J.J. \n You were so close. "
+    } ],
+    "wpWinPosId": 15,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 72800,
+    "dDurationMs": 2880,
+    "segs": [ {
+      "utf8": " I'm sorry, J.J. \n You made me do this. "
+    } ],
+    "wpWinPosId": 16,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 75680,
+    "dDurationMs": 2280,
+    "segs": [ {
+      "utf8": " This is a pecan. "
+    } ],
+    "wpWinPosId": 17,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 78000,
+    "dDurationMs": 2880,
+    "segs": [ {
+      "utf8": " This is a dish of pecans. "
+    } ],
+    "wpWinPosId": 18,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 83560,
+    "dDurationMs": 2560,
+    "segs": [ {
+      "utf8": " These are NOT... "
+    } ],
+    "wpWinPosId": 17,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 86120,
+    "dDurationMs": 2560,
+    "segs": [ {
+      "utf8": " ...\"PEE-CANS!\" "
+    } ],
+    "wpWinPosId": 19,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 92200,
+    "dDurationMs": 2200,
+    "segs": [ {
+      "utf8": " THIS... is a \"Pea-Can.\" "
+    } ],
+    "wpWinPosId": 20,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 103800,
+    "dDurationMs": 2480,
+    "segs": [ {
+      "utf8": " This is also a \"Pee-Can.\" "
+    } ],
+    "wpWinPosId": 18,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 107400,
+    "dDurationMs": 1840,
+    "segs": [ {
+      "utf8": " *sounds of sloshing liquid* "
+    } ],
+    "wpWinPosId": 21,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 109240,
+    "dDurationMs": 5440,
+    "segs": [ {
+      "utf8": " Yes, I urinated in this can \n just to make this point. "
+    } ],
+    "wpWinPosId": 22,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 114680,
+    "dDurationMs": 1960,
+    "segs": [ {
+      "utf8": " Now, let me be completely clear. "
+    } ],
+    "wpWinPosId": 23,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 116640,
+    "dDurationMs": 4360,
+    "segs": [ {
+      "utf8": " This is not an opinion. \n This is not an argument. "
+    } ],
+    "wpWinPosId": 24,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 121000,
+    "dDurationMs": 5280,
+    "segs": [ {
+      "utf8": " \"Puh-kaanz\" is an OBJECTIVELY \n better pronunciation, "
+    } ],
+    "wpWinPosId": 14,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 126280,
+    "dDurationMs": 5240,
+    "segs": [ {
+      "utf8": " because \"Pee-cans\" sounds \n D I S G U S T I N G ! "
+    } ],
+    "wpWinPosId": 25,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 131520,
+    "dDurationMs": 3560,
+    "segs": [ {
+      "utf8": " And pecans don't deserve a \n disgusting conotation. "
+    } ],
+    "wpWinPosId": 26,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 135080,
+    "dDurationMs": 3280,
+    "segs": [ {
+      "utf8": " After all, they're delicious! \n Don't you agree? "
+    } ],
+    "wpWinPosId": 14,
+    "wsWinStyleId": 1
+  } ]
+}
