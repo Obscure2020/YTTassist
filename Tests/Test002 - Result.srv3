@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?><timedtext format="3">
+<head>
+<wp id="0"/>
+<wp id="3" ap="1" ah="50" av="0"/>
+<wp id="2" ap="4" ah="50" av="50"/>
+<wp id="1" ap="7" ah="50" av="100"/>
+</head>
+<body>
+<p t="0" d="2000" wp="1">Mary had a little lamb</p>
+<p t="2000" d="2000" wp="2">whose fleece was white as snow,</p>
+<p t="4000" d="2000" wp="3">but no one gave a shit.</p>
+</body>
+</timedtext>
+
+<!-- As displayed in "Test002 - Result.png", this one worked as expected! This is excellent. -->
+<!-- Also of note are the ways YouTube modified the file. YouTube seems to like to reorder my <wp> tags to be not in order of id. -->
+<!-- YouTube also seems to be adding in a <wp> with an id of 0. Now, I could start my own counting with 0, but I'm torn. -->
+<!-- Before I started conducting my testing, I encountered one example where a <wp> with an id of 0 was NOT generated. -->
+<!-- Erring on the side of caution, I think I'll start my counting at 1 as a rule here. -->
+<!-- If YouTube wants to add extra useless information to the subtitle file, they can go right ahead. I couldn't care less. -->
+<!-- After all, they have practically infinite storage space. -->
