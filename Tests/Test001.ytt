@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?><timedtext format="3">
+<head>
+<wp id="1" ap="7"/>
+<wp id="2" ap="4"/>
+<wp id="3" ap="1"/>
+</head>
+<body>
+<p t="0" d="1000" wp="1">Lorem ipsum</p>
+<p t="1000" d="1000" wp="1">Dolor sit amet</p>
+<!-- Well, poop. This was supposed to be "1" "2" "3". Instead I put "1" "1" "3". -->
+<!-- I only noticed once I got the results back from YouTube's end. -->
+<!-- See "Test001 - Result.srv3" for further comments on this test. -->
+<p t="2000" d="1000" wp="3">Adscipiscing elit</p>
+</body>
+</timedtext>
