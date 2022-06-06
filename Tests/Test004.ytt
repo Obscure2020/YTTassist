@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?><timedtext format="3">
+<head>
+<wp id="1" ap="0" ah="0" av="0"/>
+<wp id="2" ap="1" ah="50" av="0"/>
+<wp id="3" ap="2" ah="100" av="0"/>
+<wp id="4" ap="3" ah="0" av="50"/>
+<wp id="5" ap="4" ah="50" av="50"/>
+<wp id="6" ap="5" ah="100" av="50"/>
+<wp id="7" ap="6" ah="0" av="100"/>
+<wp id="8" ap="7" ah="50" av="100"/>
+<wp id="9" ap="8" ah="100" av="100"/>
+<pen id="1" fc="#FF0000"/>
+<pen id="2" fc="#FF8000"/>
+<pen id="3" fc="#FFFF00"/>
+<pen id="4" fc="#80FF00"/>
+<pen id="5" fc="#00FF00"/>
+<pen id="6" fc="#00FF80"/>
+<pen id="7" fc="#00FFFF"/>
+<pen id="8" fc="#A000FF"/>
+<pen id="9" fc="#FF00FF"/>
+</head>
+<body>
+<p t="0" d="10000" wp="1"><s></s><s p="1">Upper Left</s></p>
+<p t="100" d="10000" wp="2"><s></s><s p="2">Upper Center</s></p>
+<p t="200" d="10000" wp="3"><s></s><s p="3">Upper Right</s></p>
+<p t="300" d="10000" wp="4"><s></s><s p="4">Middle Left</s></p>
+<p t="400" d="10000" wp="5"><s></s><s p="5">Middle Center</s></p>
+<p t="500" d="10000" wp="6"><s></s><s p="6">Middle Right</s></p>
+<p t="600" d="10000" wp="7"><s></s><s p="7">Bottom Left</s></p>
+<p t="700" d="10000" wp="8"><s></s><s p="8">Bottom Center</s></p>
+<p t="800" d="10000" wp="9"><s></s><s p="9">Bottom Right</s></p>
+</body>
+</timedtext>
