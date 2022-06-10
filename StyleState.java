@@ -20,4 +20,9 @@ public class StyleState {
     public PenStyle penStyle(){ //Expose pen for use
         return pen;
     }
+
+    public void debugPrint(){
+        wp.debugPrint();
+        pen.debugPrint();
+    }
 }

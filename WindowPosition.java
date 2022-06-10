@@ -26,6 +26,10 @@ public class WindowPosition {
         return true;
     }
 
+    public void debugPrint(){
+        System.out.println("WindowPositon: ap" + anchorPosition + ", ah" + alignHorizontal + ", av" + alignVertical);
+    }
+
     public String printMarkup(int index){
         StringBuilder sb = new StringBuilder("<wp id=\"");
         sb.append(index);

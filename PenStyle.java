@@ -37,6 +37,19 @@ public class PenStyle {
         return true;
     }
 
+    public void debugPrint(){
+        if(isDefault()){
+            System.out.println("Default pen.");
+        } else {
+            System.out.print("PenStyle:");
+            if(bold) System.out.print(" bold");
+            if(italics) System.out.print(" italics");
+            if(underline) System.out.print(" underline");
+            if(fontColor != -1) System.out.print(" fc" + Integer.toString(fontColor, 16).toUpperCase());
+            System.out.println();
+        }
+    }
+
     public String printMarkup(int index){
         StringBuilder sb = new StringBuilder("<pen id=\"");
         sb.append(index);
