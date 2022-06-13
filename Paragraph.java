@@ -40,9 +40,10 @@ public class Paragraph {
             sb.append(pieces[0]);
         }
         for(int i=1; i<pieces.length; i++){
-            if(pieces[i].equals("[")){
+            String p = pieces[i];
+            if(p.equals("[")){
                 if(styleMode){
-                    throw new IllegalArgumentException("Invalid use of a second [ before a closing ].");
+                    locationError(input, pieces, i, 0, "Invalid use of a second [ before a closing ].");
                 } else {
                     lines.add(sb.toString());
                     sb.setLength(0);
@@ -50,49 +51,57 @@ public class Paragraph {
                 }
                 continue;
             }
-            if(pieces[i].equals("]")){
+            if(p.equals("]")){
                 if(styleMode){
                     styles.add(style);
                     style = new StyleState(style);
                     styleMode = false;
                 } else {
-                    sb.append(pieces[i]);
+                    sb.append(p);
                 }
                 continue;
             }
             if(styleMode){
-                if(pieces[i].charAt(0) == ',') pieces[i] = pieces[i].substring(1);
-                if(pieces[i].charAt(0) == '!'){
-                    if(pieces[i].length() < 3) throw new IllegalArgumentException("Opcode too short.");
-                    String opcode = pieces[i].substring(1,3);
+                int commaOffset = 0;
+                if(p.charAt(0) == ','){
+                    p = p.substring(1);
+                    commaOffset = 1;
+                }
+                if(p.charAt(0) == '!'){
+                    if(p.length() < 3) locationError(input, pieces, i, 1+commaOffset, "Opcode too short.");;
+                    String opcode = p.substring(1,3);
                     if(opcode.equals("bo")){
-                        if(pieces[i].length() > 3) throw new IllegalArgumentException("Invalid provision of extra characters in a \"!bo\" command.");
+                        if(p.length() > 3) locationError(input, pieces, i, 3+commaOffset, "Invalid provision of extra characters in a \"!bo\" command.");
                         PenStyle ps = style.penStyle();
                         ps.resetBold();
                     } else if (opcode.equals("it")){
-                        if(pieces[i].length() > 3) throw new IllegalArgumentException("Invalid provision of extra characters in an \"!it\" command.");
+                        if(p.length() > 3) locationError(input, pieces, i, 3+commaOffset, "Invalid provision of extra characters in an \"!it\" command.");
                         PenStyle ps = style.penStyle();
                         ps.resetItalics();
                     } else if(opcode.equals("un")){
-                        if(pieces[i].length() > 3) throw new IllegalArgumentException("Invalid provision of extra characters in a \"!un\" command.");
+                        if(p.length() > 3) locationError(input, pieces, i, 3+commaOffset, "Invalid provision of extra characters in a \"!un\" command.");
                         PenStyle ps = style.penStyle();
                         ps.resetUnderline();
+                    } else {
+                        locationError(input, pieces, i, 1+commaOffset, "Invalid opcode.");
                     }
                 } else {
-                    if(pieces[i].length() < 2) throw new IllegalArgumentException("Opcode too short.");
-                    String opcode = pieces[i].substring(0,2);
+                    if(p.length() < 2) locationError(input, pieces, i, commaOffset, "Opcode too short.");
+                    String opcode = p.substring(0,2);
                     if(opcode.equals("bo")){
-                        if(pieces[i].length() > 2) throw new IllegalArgumentException("Invalid provision of extra characters in a \"bo\" command.");
+                        if(p.length() > 2) locationError(input, pieces, i, 2+commaOffset, "Invalid provision of extra characters in a \"bo\" command.");
                         PenStyle ps = style.penStyle();
                         ps.setBold();
                     } else if(opcode.equals("it")){
-                        if(pieces[i].length() > 2) throw new IllegalArgumentException("Invalid provision of extra characters in an \"it\" command.");
+                        if(p.length() > 2) locationError(input, pieces, i, 2+commaOffset, "Invalid provision of extra characters in an \"it\" command.");
                         PenStyle ps = style.penStyle();
                         ps.setItalics();
                     } else if(opcode.equals("un")){
-                        if(pieces[i].length() > 2) throw new IllegalArgumentException("Invalid provision of extra characters in a \"un\" command.");
+                        if(p.length() > 2) locationError(input, pieces, i, 2+commaOffset, "Invalid provision of extra characters in a \"un\" command.");
                         PenStyle ps = style.penStyle();
                         ps.setUnderline();
+                    } else {
+                        locationError(input, pieces, i, commaOffset, "Invalid opcode.");
                     }
                 }
             } else {
@@ -102,5 +111,40 @@ public class Paragraph {
         if(!styleMode && !sb.isEmpty()) lines.add(sb.toString());
         if(styles.size() > lines.size()) styles.remove(styles.size()-1);
         manuscript = input;
+    }
+
+    private void locationError(String input, String[] pieces, int index, int n, String reason) throws IllegalArgumentException{
+        int end = 0;
+        for(int i=0; i<index; i++) end += pieces[i].length();
+        StringBuilder arrow = new StringBuilder(end);
+        for(int i=0; i<end+n; i++) arrow.append('-');
+        StringBuilder source = new StringBuilder(input.substring(0,end));
+        if(source.length() > 35){
+            while(source.length() > 35){
+                source.delete(0, 1);
+                arrow.deleteCharAt(0);
+            }
+            source.insert(0, "...");
+            arrow.insert(0, "---");
+        }
+        source.append(pieces[index]);
+        int preEndPad = source.length();
+        int k = 1;
+        while(source.length()-preEndPad<35 && index+k<pieces.length){
+            source.append(pieces[index+k]);
+            k++;
+        }
+        if(source.length()-preEndPad>35){
+            while(source.length()-preEndPad>35) source.delete(source.length()-1, source.length());
+            source.append("...");
+        }
+        arrow.append("^ HERE");
+
+        StringBuilder result = new StringBuilder(reason);
+        result.append("\n\t=====Location=====\n\t");
+        result.append(source);
+        result.append("\n\t");
+        result.append(arrow);
+        throw new IllegalArgumentException(result.toString());
     }
 }
