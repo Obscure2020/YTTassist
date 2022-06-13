@@ -2,7 +2,8 @@
 
 ## Roadmap
 
-- [ ] Two-letter Opcodes
+- [x] Two-letter Opcodes
+- [ ] Location-stamped errors
 - [ ] Font Color implemented
 - [ ] Anchor Point implemented
 - [ ] Added Paragraph Timing
