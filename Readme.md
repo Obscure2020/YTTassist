@@ -4,7 +4,7 @@
 
 - [x] Two-letter Opcodes
 - [x] Location-stamped errors
-- [ ] Font Color implemented
+- [x] Font Color implemented
 - [ ] Anchor Point implemented
 - [ ] Added Paragraph Timing
 - [ ] `.ytt` Export working

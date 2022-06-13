@@ -82,6 +82,10 @@ public class Paragraph {
                         if(p.length() > 3) locationError(input, pieces, i, 3+commaOffset, "Invalid provision of extra characters in a \"!un\" command.");
                         PenStyle ps = style.penStyle();
                         ps.resetUnderline();
+                    } else if(opcode.equals("fc")){
+                        if(p.length() > 3) locationError(input, pieces, i, 3+commaOffset, "Invalid provision of extra characters in a \"!fc\" command.");
+                        PenStyle ps = style.penStyle();
+                        ps.resetFontColor();
                     } else {
                         locationError(input, pieces, i, 1+commaOffset, "Invalid opcode.");
                     }
@@ -100,6 +104,13 @@ public class Paragraph {
                         if(p.length() > 2) locationError(input, pieces, i, 2+commaOffset, "Invalid provision of extra characters in a \"un\" command.");
                         PenStyle ps = style.penStyle();
                         ps.setUnderline();
+                    } else if(opcode.equals("fc")){
+                        PenStyle ps = style.penStyle();
+                        try {
+                            ps.setFontColor(p.substring(2));
+                        } catch (Exception e){
+                            locationError(input, pieces, i, 2+commaOffset, e.getMessage());
+                        }
                     } else {
                         locationError(input, pieces, i, commaOffset, "Invalid opcode.");
                     }
@@ -134,7 +145,7 @@ public class Paragraph {
             source.append(pieces[index+k]);
             k++;
         }
-        if(source.length()-preEndPad>35){
+        if(source.length()-preEndPad>35 || index+k<pieces.length){
             while(source.length()-preEndPad>35) source.delete(source.length()-1, source.length());
             source.append("...");
         }

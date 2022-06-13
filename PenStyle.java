@@ -45,7 +45,7 @@ public class PenStyle {
             if(bold) System.out.print(" bold");
             if(italics) System.out.print(" italics");
             if(underline) System.out.print(" underline");
-            if(fontColor != -1) System.out.print(" fc" + Integer.toString(fontColor, 16).toUpperCase());
+            if(fontColor != -1) System.out.print(" fc=" + Integer.toString(fontColor, 16).toUpperCase());
             System.out.println();
         }
     }
