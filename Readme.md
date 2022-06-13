@@ -1,5 +1,23 @@
 # YTTassist - Pre-alpha
 
+## Roadmap
+
+- [ ] Two-letter Opcodes
+- [ ] Font Color implemented
+- [ ] Anchor Point implemented
+- [ ] Added Paragraph Timing
+- [ ] `.ytt` Export working
+- [ ] `.srt` Import working
+- [ ] Intermediate File Extension decided
+- [ ] Intermediate File Export working
+- [ ] Intermediate File Import working
+- [ ] Initial GUI developed
+- [ ] GUI Paragraph Preview developed
+
+From there, Alpha phase begins, including additional useful features added to the GUI and more opcodes for more features supported by the `.ytt` format.
+
+## Explanation
+
 Recently, I began writing my own custom subtitles for my YouTube videos. From past experience, I knew YouTube could display custom-formatted, styled, colored, and positioned text through their subtitle system. I subsequently found it way too difficult to make use of these fancy features easily.
 
 My video editor has caption-editing features, which I found quite handy for precisely syncing my subtitles with the edits in my video. Unfortunately, none of the several different caption formats supported my video editor had complete feature-parity with what I knew YouTube could do. Worse, none of the caption *export* formats supported by my video editor worked perfectly with YouTube. Each format I tried either resulted in unintended spacing, untintended formatting, or the omission of formatting and coloring.
