@@ -5,7 +5,7 @@
 - [x] Two-letter Opcodes
 - [x] Location-stamped errors
 - [x] Font Color implemented
-- [ ] Anchor Point implemented
+- [x] Anchor Point implemented
 - [ ] Added Paragraph Timing
 - [ ] `.ytt` Export working
 - [ ] `.srt` Import working

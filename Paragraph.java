@@ -83,9 +83,15 @@ public class Paragraph {
                         PenStyle ps = style.penStyle();
                         ps.resetUnderline();
                     } else if(opcode.equals("fc")){
-                        if(p.length() > 3) locationError(input, pieces, i, 3+commaOffset, "Invalid provision of extra characters in a \"!fc\" command.");
+                        if(p.length() > 3) locationError(input, pieces, i, 3+commaOffset, "Invalid provision of extra characters in an \"!fc\" command.");
                         PenStyle ps = style.penStyle();
                         ps.resetFontColor();
+                    } else if(opcode.equals("ap")){
+                        if(p.length() > 3) locationError(input, pieces, i, 3+commaOffset, "Invalid provision of extra characters in an \"!ap\" command.");
+                        WindowPosition wp = style.windowPosition();
+                        wp.resetAnchorPosition();
+                        wp.resetAlignVertical();
+                        wp.resetAlignHorizontal();
                     } else {
                         locationError(input, pieces, i, 1+commaOffset, "Invalid opcode.");
                     }
@@ -108,6 +114,18 @@ public class Paragraph {
                         PenStyle ps = style.penStyle();
                         try {
                             ps.setFontColor(p.substring(2));
+                        } catch (Exception e){
+                            locationError(input, pieces, i, 2+commaOffset, e.getMessage());
+                        }
+                    } else if(opcode.equals("ap")){
+                        WindowPosition wp = style.windowPosition();
+                        try{
+                            int point = Integer.valueOf(p.substring(2));
+                            wp.setAnchorPosition(point);
+                            int[] av = {0, 0, 0, 50, 50, 50, 100, 100, 100};
+                            int[] ah = {0, 50, 100, 0, 50, 100, 0, 50, 100};
+                            wp.setAlignVertical(av[point]);
+                            wp.setAlignHorizontal(ah[point]);
                         } catch (Exception e){
                             locationError(input, pieces, i, 2+commaOffset, e.getMessage());
                         }

@@ -45,7 +45,11 @@ public class PenStyle {
             if(bold) System.out.print(" bold");
             if(italics) System.out.print(" italics");
             if(underline) System.out.print(" underline");
-            if(fontColor != -1) System.out.print(" fc=" + Integer.toString(fontColor, 16).toUpperCase());
+            if(fontColor != -1){
+                StringBuilder sb = new StringBuilder(Integer.toString(fontColor, 16).toUpperCase());
+                while(sb.length() < 6) sb.insert(0, "0");
+                System.out.print(" fc=" + sb.toString());
+            }
             System.out.println();
         }
     }
@@ -59,7 +63,9 @@ public class PenStyle {
         if(underline) sb.append(" u=\"1\"");
         if(fontColor != -1){
             sb.append(" fc=\"#");
-            sb.append(Integer.toString(fontColor, 16).toUpperCase());
+            StringBuilder sb2 = new StringBuilder(Integer.toString(fontColor, 16).toUpperCase());
+            while(sb2.length() < 6) sb2.insert(0, "0");
+            sb.append(sb2);
             sb.append('"');
         }
         sb.append("/>");
