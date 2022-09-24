@@ -48,7 +48,8 @@ public class PenStyle {
             if(fontColor != -1){
                 StringBuilder sb = new StringBuilder(Integer.toString(fontColor, 16).toUpperCase());
                 while(sb.length() < 6) sb.insert(0, "0");
-                System.out.print(" fc=" + sb.toString());
+                sb.insert(0, " fc=");
+                System.out.print(sb);
             }
             System.out.println();
         }
