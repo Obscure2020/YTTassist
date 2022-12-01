@@ -1,20 +1,57 @@
 import java.util.*;
+import java.time.Duration;
 
 public class Paragraph {
 
     private String manuscript;
     private ArrayList<String> lines;
     private ArrayList<StyleState> styles;
+    private Duration startStamp;
+    private Duration endStamp;
 
-    public Paragraph(){
+    public Paragraph(String startSRT, String endSRT){
         manuscript = "";
         lines = new ArrayList<>();
         styles = new ArrayList<>();
+        startStamp = parseSRTstamp(startSRT);
+        endStamp = parseSRTstamp(endSRT);
+    }
+
+    private Duration parseSRTstamp(String input){
+        StringBuilder sb = new StringBuilder(20);
+        sb.append("PT");
+        sb.append(input);
+        sb.replace(4, 5, "H");
+        sb.replace(7, 8, "M");
+        sb.replace(10, 11, ".");
+        sb.append('S');
+        return Duration.parse(sb);
+    }
+
+    private String formatSRTstamp(Duration input){
+        StringBuilder sb = new StringBuilder(20);
+        sb.append(input.toHoursPart());
+        while(sb.length() < 2) sb.insert(0, "0");
+        sb.append(':');
+        sb.append(input.toMinutesPart());
+        while(sb.length() < 5) sb.insert(3, "0");
+        sb.append(':');
+        sb.append(input.toSecondsPart());
+        while(sb.length() < 8) sb.insert(6, "0");
+        sb.append(',');
+        sb.append(input.toMillisPart());
+        while(sb.length() < 12) sb.insert(9, "0");
+        return sb.toString();
     }
 
     public void debugPrint(){
         System.out.println(" Paragraph Debug: ");
         System.out.println("==================");
+        System.out.println();
+        System.out.print("start time = ");
+        System.out.println(formatSRTstamp(startStamp));
+        System.out.print("  end time = ");
+        System.out.println(formatSRTstamp(endStamp));
         System.out.println();
         System.out.println("manuscript = ");
         System.out.println("---------------------");
@@ -148,6 +185,10 @@ public class Paragraph {
         StringBuilder arrow = new StringBuilder(end);
         for(int i=0; i<end+n; i++) arrow.append('-');
         StringBuilder source = new StringBuilder(input.substring(0,end));
+        while(source.lastIndexOf("\n")>=0){
+            source.delete(0, 1);
+            arrow.deleteCharAt(0);
+        }
         if(source.length() > 35){
             while(source.length() > 35){
                 source.delete(0, 1);
