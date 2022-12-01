@@ -7,8 +7,8 @@
 - [x] Font Color implemented
 - [x] Anchor Point implemented
 - [ ] Added Paragraph Timing (Experimenting here currently.)
-- [ ] `.ytt` Export working
 - [ ] `.srt` Import working
+- [ ] `.ytt` Export working
 - [ ] Intermediate File Extension decided
 - [ ] Intermediate File Export working
 - [ ] Intermediate File Import working
