@@ -2,14 +2,14 @@ import java.util.*;
 import java.util.stream.*;
 import java.io.*;
 
-public class ReadSRT {
+public class FileHandler {
     private static boolean simpleMatch(final String s, final String pat, final char x){
         if(s.length() != pat.length()) return false;
         return IntStream.range(0,pat.length()).parallel().filter(i->pat.charAt(i)!=x).allMatch(i->s.charAt(i)==pat.charAt(i));
     }
 
-    public static ArrayList<Paragraph> readFile(String pathname) throws FileNotFoundException{
-        Scanner scan = new Scanner(new File("Reference/Subtitles/PecansBetter.srt"));
+    public static ArrayList<Paragraph> readSRT(String pathname) throws FileNotFoundException{
+        Scanner scan = new Scanner(new File(pathname));
         ArrayList<String> input = new ArrayList<>();
         while(scan.hasNext()) input.add(scan.nextLine().trim());
         scan.close();

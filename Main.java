@@ -6,7 +6,8 @@ public class Main {
         // String testInput = "[fc00FF00,ap3]This string is green and on the left.[fc00FFFF,!ap]This string is cyan and at the bottom.";
         // testPara.newManuscript(testInput);
         // testPara.debugPrint();
-        ArrayList<Paragraph> subtitles = ReadSRT.readFile("Reference/Subtitles/PecansBetter.srt");
+        ArrayList<Paragraph> subtitles = FileHandler.readSRT("Reference/Subtitles/PecansBetter.srt");
         for(Paragraph p : subtitles) p.debugPrint();
+        // FileHandler.writeYTT(subtitles, "PecansBetter.ytt");
     }
 }
