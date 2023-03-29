@@ -11,7 +11,7 @@ public class PenStyle {
         bold = false;
         italics = false;
         underline = false;
-        fontColor = -1;
+        fontColor = Integer.parseInt("FFFFFF", 16);
     }
 
     public PenStyle(PenStyle other){ //Copy over all values
@@ -21,38 +21,25 @@ public class PenStyle {
         fontColor = other.fontColor;
     }
 
-    public boolean equals(PenStyle other){
-        if(bold != other.bold) return false;
-        if(italics != other.italics) return false;
-        if(underline != other.underline) return false;
-        if(fontColor != other.fontColor) return false;
-        return true;
-    }
-
-    public boolean isDefault(){ //If text is to use default pen styling, a pen isn't actually necessary. This is the check for unnecessarity.
-        if(bold) return false;
-        if(italics) return false;
-        if(underline) return false;
-        if(fontColor != -1) return false;
+    public boolean equals(Object other){
+        if(!(other instanceof PenStyle)) return false;
+        PenStyle brother = (PenStyle) other;
+        if(bold != brother.bold) return false;
+        if(italics != brother.italics) return false;
+        if(underline != brother.underline) return false;
+        if(fontColor != brother.fontColor) return false;
         return true;
     }
 
     public void debugPrint(){
-        if(isDefault()){
-            System.out.println("Default pen.");
-        } else {
-            System.out.print("PenStyle:");
-            if(bold) System.out.print(" bold");
-            if(italics) System.out.print(" italics");
-            if(underline) System.out.print(" underline");
-            if(fontColor != -1){
-                StringBuilder sb = new StringBuilder(Integer.toString(fontColor, 16).toUpperCase());
-                while(sb.length() < 6) sb.insert(0, "0");
-                sb.insert(0, " fc=");
-                System.out.print(sb);
-            }
-            System.out.println();
-        }
+        System.out.print("PenStyle:");
+        if(bold) System.out.print(" bold");
+        if(italics) System.out.print(" italics");
+        if(underline) System.out.print(" underline");
+        StringBuilder sb = new StringBuilder(Integer.toString(fontColor, 16).toUpperCase());
+        while(sb.length() < 6) sb.insert(0, "0");
+        sb.insert(0, " fc=");
+        System.out.println(sb);
     }
 
     public String printMarkup(int index){
@@ -62,14 +49,11 @@ public class PenStyle {
         if(bold) sb.append(" b=\"1\"");
         if(italics) sb.append(" i=\"1\"");
         if(underline) sb.append(" u=\"1\"");
-        if(fontColor != -1){
-            sb.append(" fc=\"#");
-            StringBuilder sb2 = new StringBuilder(Integer.toString(fontColor, 16).toUpperCase());
-            while(sb2.length() < 6) sb2.insert(0, "0");
-            sb.append(sb2);
-            sb.append('"');
-        }
-        sb.append("/>");
+        sb.append(" fc=\"#");
+        StringBuilder sb2 = new StringBuilder(Integer.toString(fontColor, 16).toUpperCase());
+        while(sb2.length() < 6) sb2.insert(0, "0");
+        sb.append(sb2);
+        sb.append("\"/>");
         return sb.toString();
     }
 
@@ -115,6 +99,6 @@ public class PenStyle {
     }
 
     public void resetFontColor(){
-        fontColor = -1;
+        fontColor = Integer.parseInt("FFFFFF", 16);
     }
 }

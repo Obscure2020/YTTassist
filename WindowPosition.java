@@ -19,10 +19,12 @@ public class WindowPosition {
         alignVertical = other.alignVertical;
     }
 
-    public boolean equals(WindowPosition other){
-        if(anchorPosition != other.anchorPosition) return false;
-        if(alignHorizontal != other.alignHorizontal) return false;
-        if(alignVertical != other.alignVertical) return false;
+    public boolean equals(Object other){
+        if(!(other instanceof WindowPosition)) return false;
+        WindowPosition brother = (WindowPosition) other;
+        if(anchorPosition != brother.anchorPosition) return false;
+        if(alignHorizontal != brother.alignHorizontal) return false;
+        if(alignVertical != brother.alignVertical) return false;
         return true;
     }
 
