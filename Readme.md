@@ -6,7 +6,7 @@
 - [x] Anchor Point implemented
 - [x] Added Paragraph Timing
 - [x] `.srt` Import working
-- [ ] `.ytt` Export working (Remember HTML symbol entities!)
+- [x] `.ytt` Export working
 - [ ] Intermediate File Extension decided
 - [ ] Intermediate File Export working
 - [ ] Intermediate File Import working

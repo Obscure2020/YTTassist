@@ -177,6 +177,16 @@ public class Paragraph {
         if(!styleMode && !sb.isEmpty()) lines.add(sb.toString());
         if(styles.size() > lines.size()) styles.remove(styles.size()-1);
         manuscript = input;
+        //The following two loops were added to fix some errors with styling and line breaks after uploading to YouTube.
+        for(int i=0; i<lines.size()-1; i++){
+            while(lines.get(i).endsWith("\n")){
+                lines.set(i, lines.get(i).substring(0, lines.get(i).length()-1));
+                lines.set(i+1, "\n" + lines.get(i+1));
+            }
+        }
+        for(int i=1; i<lines.size(); i++){
+            if(lines.get(i).startsWith("\n")) lines.set(i-1, lines.get(i-1) + " ");
+        }
     }
 
     private void locationError(String input, String[] pieces, int index, int n, String reason) throws IllegalArgumentException{

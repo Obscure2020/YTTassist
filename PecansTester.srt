@@ -1,6 +1,6 @@
 ﻿1
 00:00:00,000 --> 00:00:03,750
-[fcFFA000]J. J. McCullough
+[fcFF0000]J. J. McCullough
 [!fc]...as a result, ice cream has evolved
 into a pretty unique consumer good,
 
@@ -146,7 +146,7 @@ because "Pee-cans" sounds
 32
 00:02:08,750 --> 00:02:09,750
 because "Pee-cans" sounds
-[it]DISGUSTING![!it,ap5]*more sloshing*
+[it]DISGUSTING![!it,ap3]*more sloshing*
 
 33
 00:02:09,750 --> 00:02:11,541
