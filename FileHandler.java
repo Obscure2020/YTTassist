@@ -1,6 +1,7 @@
 import java.util.*;
 import java.util.stream.*;
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 
 public class FileHandler {
     private static boolean simpleMatch(final String s, final String pat, final char x){
@@ -44,5 +45,87 @@ public class FileHandler {
             result.add(p);
         }
         return result;
+    }
+
+    private static int getID(WindowPosition item, ArrayList<WindowPosition> list){
+        int spot = list.indexOf(item);
+        if(spot < 0){
+            spot = list.size();
+            list.add(item);
+        }
+        return spot + 1;
+    }
+
+    private static int getID(PenStyle item, ArrayList<PenStyle> list){
+        int spot = list.indexOf(item);
+        if(spot < 0){
+            spot = list.size();
+            list.add(item);
+        }
+        return spot + 1;
+    }
+
+    private static String markupSafe(String input){
+        HashMap<String,String> conv = new HashMap<>(8);
+        conv.put("\"", "&#34;");
+        conv.put("&", "&#38;");
+        conv.put("'", "&#39;");
+        conv.put("/", "&#47;");
+        conv.put("<", "&#60;");
+        conv.put("=", "&#61;");
+        conv.put(">", "&#62;");
+        conv.put("\\", "&#92;");
+        return Arrays.stream(input.split("")).map(s -> conv.getOrDefault(s, s)).reduce("", String::concat);
+    }
+
+    public static void writeYTT(ArrayList<Paragraph> input, File output) throws IOException{
+        //PrintStream pw = System.out;
+        PrintWriter pw = new PrintWriter(output, StandardCharsets.UTF_8);
+        ArrayList<WindowPosition> wpList = new ArrayList<>();
+        ArrayList<PenStyle> penList = new ArrayList<>();
+        StringBuilder body = new StringBuilder();
+        for(Paragraph p : input){
+            ArrayList<String> lines = p.getLines();
+            ArrayList<StyleState> styles = p.getStyles();
+            body.append(p.markupTiming());
+            body.append(" wp=\"");
+            int wpID = getID(styles.get(0).windowPosition(), wpList);
+            body.append(wpID);
+            body.append("\"><s></s><s p=\"");
+            int penID = getID(styles.get(0).penStyle(), penList);
+            body.append(penID);
+            body.append("\">");
+            body.append(markupSafe(lines.get(0)));
+            for(int i=1; i<lines.size(); i++){
+                body.append("</s>");
+                int prevWP = wpID;
+                wpID = getID(styles.get(i).windowPosition(), wpList);
+                penID = getID(styles.get(i).penStyle(), penList);
+                if(wpID != prevWP){
+                    body.append("</p>\n");
+                    body.append(p.markupTiming());
+                    body.append(" wp=\"");
+                    body.append(wpID);
+                    body.append("\"><s></s>");
+                }
+                body.append("<s p=\"");
+                body.append(penID);
+                body.append("\">");
+                body.append(markupSafe(lines.get(i)));
+            }
+            body.append("</s></p>\n");
+        }
+        //Prints with "\n" rather than Println are used to ensure Unix newline standard.
+        pw.print("<?xml version=\"1.0\" encoding=\"utf-8\" ?><timedtext format=\"3\">\n<head>\n");
+        for(int i=0; i<wpList.size(); i++){
+            pw.print(wpList.get(i).printMarkup(i+1) + "\n");
+        }
+        for(int i=0; i<penList.size(); i++){
+            pw.print(penList.get(i).printMarkup(i+1) + "\n");
+        }
+        pw.print("</head>\n<body>\n");
+        pw.print(body);
+        pw.print("</body>\n</timedtext>\n");
+        pw.close();
     }
 }

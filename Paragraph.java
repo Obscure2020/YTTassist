@@ -217,4 +217,23 @@ public class Paragraph {
         result.append(arrow);
         throw new IllegalArgumentException(result.toString());
     }
+
+    public String markupTiming(){
+        long start = startStamp.toMillis();
+        long length = endStamp.toMillis() - start;
+        StringBuilder sb = new StringBuilder("<p t=\"");
+        sb.append(start);
+        sb.append("\" d=\"");
+        sb.append(length);
+        sb.append('"');
+        return sb.toString();
+    }
+
+    public ArrayList<String> getLines(){
+        return lines;
+    }
+
+    public ArrayList<StyleState> getStyles(){
+        return styles;
+    }
 }
