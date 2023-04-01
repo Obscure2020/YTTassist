@@ -75,7 +75,6 @@ public class FileHandler {
         conv.put("=", "&#61;");
         conv.put(">", "&#62;");
         conv.put("\\", "&#92;");
-        conv.put(Character.toString(8203), "&#8203;");
         return Arrays.stream(input.split("")).map(s -> conv.getOrDefault(s, s)).reduce("", String::concat);
     }
 
@@ -102,7 +101,7 @@ public class FileHandler {
                 int prevWP = wpID;
                 wpID = getID(styles.get(i).windowPosition(), wpList);
                 penID = getID(styles.get(i).penStyle(), penList);
-                String toPrint = lines.get(i);
+                String toPrint = markupSafe(lines.get(i));
                 if(wpID != prevWP){
                     body.append("</p>\n");
                     body.append(p.markupTiming());
@@ -112,13 +111,12 @@ public class FileHandler {
                 } else if(toPrint.startsWith("\n")){
                     //Turns out that Pen Style transistions at the same location as a line break can be difficult to pull off nicely.
                     body.append("&#8203;");
-                    char zeroWidthSpace = 8203;
-                    toPrint = zeroWidthSpace + toPrint;
+                    toPrint = "&#8203;" + toPrint;
                 }
                 body.append("<s p=\"");
                 body.append(penID);
                 body.append("\">");
-                body.append(markupSafe(toPrint));
+                body.append(toPrint);
             }
             body.append("</s></p>\n");
         }
