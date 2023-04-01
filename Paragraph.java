@@ -177,19 +177,12 @@ public class Paragraph {
         if(!styleMode && !sb.isEmpty()) lines.add(sb.toString());
         if(styles.size() > lines.size()) styles.remove(styles.size()-1);
         manuscript = input;
-        //The following two loops were added to fix some errors with styling and line breaks after uploading to YouTube.
-        //As things currently stand, there is a descrepancy between how the Desktop version of YouTube and how the
-        //Mobile version of YouTube renders certain edge cases that occur when text style changes on a line break.
-        //After extensive testing, these two loops mask that issue as much as possible for now.
+        //Turns out that Pen Style transistions at the same location as a line break can be difficult to pull off nicely.
         for(int i=0; i<lines.size()-1; i++){
             while(lines.get(i).endsWith("\n")){
                 lines.set(i, lines.get(i).substring(0, lines.get(i).length()-1));
                 lines.set(i+1, "\n" + lines.get(i+1));
             }
-        }
-        char specialSpace = 8203;
-        for(int i=1; i<lines.size(); i++){
-            if(lines.get(i).startsWith("\n")) lines.set(i, specialSpace + lines.get(i));
         }
     }
 
